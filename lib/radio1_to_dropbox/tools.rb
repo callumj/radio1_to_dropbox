@@ -43,7 +43,7 @@ module Radio1ToDropbox
                               nil
                             end
 
-            if existing_file.nil? || existing_file.is_deleted.eql(true)
+            if existing_file.nil?
               m4a_file = latest_episode.as_m4a
               m4a_file.seek(0)
 
