@@ -1,0 +1,42 @@
+GIT
+  remote: git@github.com:callumj/RadioKeeper.git
+  revision: df9685dae3faba90c35f80c742cee617c9cf8777
+  specs:
+    radio_keeper (0.1)
+      activesupport
+      nokogiri
+
+PATH
+  remote: .
+  specs:
+    radio1_to_dropbox (0.1)
+      activesupport
+      dropbox-api
+      radio_keeper
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.2.9)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+    dropbox-api (0.3.2)
+      hashie
+      multi_json
+      oauth
+    hashie (1.2.0)
+    i18n (0.6.1)
+    multi_json (1.3.7)
+    nokogiri (1.5.5)
+    oauth (0.4.7)
+    rake (10.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  dropbox-api
+  radio1_to_dropbox!
+  radio_keeper!
+  rake
