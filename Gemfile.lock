@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:callumj/RadioKeeper.git
+  remote: git://github.com/callumj/RadioKeeper.git
   revision: df9685dae3faba90c35f80c742cee617c9cf8777
   specs:
     radio_keeper (0.1)

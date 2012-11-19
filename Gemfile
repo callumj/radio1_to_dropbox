@@ -8,4 +8,4 @@ gem "activesupport"
 
 gem "dropbox-api"
 
-gem "radio_keeper", :git => "git@github.com:callumj/RadioKeeper.git"
+gem "radio_keeper", :git => "git://github.com/callumj/RadioKeeper.git"
