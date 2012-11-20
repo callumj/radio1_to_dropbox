@@ -44,10 +44,22 @@ module Radio1ToDropbox
                             end
 
             if existing_file.nil?
+              puts "\tDownloading episode #{file_name}"
               m4a_file = latest_episode.as_m4a
               m4a_file.seek(0)
 
-              client.upload path, m4a_file
+              puts "\tUploading info #{file_name}"
+              tracks_played = latest_episode.tracks_played
+              string = ""
+              tracks_played.each do |track|
+                string << "#{track[:track]} - #{track[:artist]}\r\n"
+              end
+              client.upload "#{path}.txt", string
+
+              puts "\tUploading episode #{file_name}"
+              client.chunked_upload path, m4a_file
+
+              puts "\tCompleted #{file_name}"
             end
           end
         end
