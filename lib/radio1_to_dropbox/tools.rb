@@ -64,7 +64,7 @@ module Radio1ToDropbox
         files << [object.last_modified, object]
       end
 
-      newest = files.sort.first(10).reverse
+      newest = files.sort.reverse.first(10)
 
       builder = Builder::XmlMarkup.new
       builder.instruct! :xml, version: "1.0" 
