@@ -1,19 +1,13 @@
-require 'dropbox-api'
-require 'active_support/all'
-
 require 'radio1_to_dropbox/tools'
 
 module Radio1ToDropbox
 
-  def self.dropbox_config!
-    Dropbox::API::Config.app_key    = ENV["DROPBOX_TOKEN"]
-    Dropbox::API::Config.app_secret = ENV["DROPBOX_SECRET"]
-    Dropbox::API::Config.mode       = "sandbox"
+  def self.s3_instance
+    @s3 ||= AWS::S3.new
   end
 
-  def self.dropbox_client
-    dropbox_config!
-    Dropbox::API::Client.new(:token => ENV["DROPBOX_USER_TOKEN"], :secret => ENV["DROPBOX_USER_SECRET"])
+  def self.s3_bucket
+    s3_instance.buckets[ENV["S3_BUCKET"]]
   end
 
 end

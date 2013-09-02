@@ -1,11 +1,16 @@
 source "http://rubygems.org"
-gemspec
 
 gem "rake"
 
 # Make Ruby better                                                                   
 gem "activesupport"
 
-gem "dropbox-api", :git => "git://github.com/jsierles/dropbox-api.git"
+gem "aws-sdk"
 
-gem "radio_keeper", :git => "git://github.com/callumj/RadioKeeper.git"
+gem "builder"
+
+gem "radio_keeper", git: "git://github.com/callumj/RadioKeeper.git"
+
+group :development do
+  gem "pry"
+end
