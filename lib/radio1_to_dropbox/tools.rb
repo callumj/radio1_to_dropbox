@@ -92,7 +92,7 @@ module Radio1ToDropbox
               item.link        object.public_url
               item.title       name
               item.pubDate     modified_at
-              item.description { item.cdata! description }
+              item.description { item.cdata! description.gsub(/(\r?\n)+/, "<br />") }
               item.enclosure(url: object.public_url, length: object.content_length, type: "audio/mp4")
             end
           end
