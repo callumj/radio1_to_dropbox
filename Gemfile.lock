@@ -1,10 +1,15 @@
 GIT
-  remote: git://github.com/callumj/RadioKeeper.git
-  revision: 5deeeb5b8248a725094d25aed83e51d091f53833
+  remote: git://github.com/callumj/media_baron.git
+  revision: 6b298096480f8edd647761df32e94177073a2432
   specs:
-    radio_keeper (0.1)
+    media_baron (0.1)
       activesupport
+      addressable
+      amatch
+      faraday
+      faraday_middleware
       nokogiri
+      tzinfo
 
 GEM
   remote: http://rubygems.org/
@@ -12,16 +17,25 @@ GEM
     activesupport (3.2.9)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    addressable (2.3.5)
+    amatch (0.2.11)
+      tins (~> 0.3)
+    atomic (1.1.15)
     aws-sdk (1.16.1)
       json (~> 1.4)
       nokogiri (< 1.6.0)
       uuidtools (~> 2.1)
     builder (3.2.2)
     coderay (1.0.9)
+    faraday (0.8.9)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
     i18n (0.6.1)
     json (1.8.0)
     method_source (0.8.2)
     multi_json (1.5.0)
+    multipart-post (1.2.0)
     nokogiri (1.5.5)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -29,6 +43,11 @@ GEM
       slop (~> 3.4)
     rake (10.0.2)
     slop (3.4.6)
+    thread_safe (0.2.0)
+      atomic (>= 1.1.7, < 2)
+    tins (0.13.2)
+    tzinfo (1.1.0)
+      thread_safe (~> 0.1)
     uuidtools (2.1.4)
 
 PLATFORMS
@@ -38,6 +57,6 @@ DEPENDENCIES
   activesupport
   aws-sdk
   builder
+  media_baron!
   pry
-  radio_keeper!
   rake

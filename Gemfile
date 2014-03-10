@@ -9,7 +9,7 @@ gem "aws-sdk"
 
 gem "builder"
 
-gem "radio_keeper", git: "git://github.com/callumj/RadioKeeper.git"
+gem "media_baron", git: "git://github.com/callumj/media_baron.git"
 
 group :development do
   gem "pry"

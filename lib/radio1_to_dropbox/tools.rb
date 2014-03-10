@@ -15,7 +15,7 @@ module Radio1ToDropbox
     def self.download_latest_show
       bucket = Radio1ToDropbox.s3_bucket
       show_list.each do |show_url|
-        show = RadioKeeper::Providers::BBC::Show.new show_url
+        show = MediaBaron::Providers::BBC::Show.new show_url
 
         unless show.nil?
           puts "Processing #{show.title}"
@@ -104,6 +104,11 @@ module Radio1ToDropbox
       rss_file = bucket.objects["#{show}.rss"]
       rss_file.write(res)
       rss_file.acl = :public_read
+    end
+
+    def self.add_to_index(rss_file)
+
+      
     end
   end
 end
