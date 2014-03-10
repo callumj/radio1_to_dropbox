@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/callumj/media_baron.git
-  revision: 6b298096480f8edd647761df32e94177073a2432
+  revision: 98533d0c6858386a931ad7da9cfe689193ce53a0
   specs:
     media_baron (0.1)
       activesupport
@@ -14,8 +14,8 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.2.9)
-      i18n (~> 0.6)
+    activesupport (3.2.17)
+      i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     addressable (2.3.5)
     amatch (0.2.11)
@@ -31,12 +31,12 @@ GEM
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
-    i18n (0.6.1)
+    i18n (0.6.9)
     json (1.8.0)
     method_source (0.8.2)
-    multi_json (1.5.0)
+    multi_json (1.9.0)
     multipart-post (1.2.0)
-    nokogiri (1.5.5)
+    nokogiri (1.5.11)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
