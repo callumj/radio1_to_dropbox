@@ -9,6 +9,8 @@ gem "aws-sdk"
 
 gem "builder"
 
+gem "clockwork"
+
 gem "media_baron", git: "git://github.com/callumj/media_baron.git"
 
 group :development do
