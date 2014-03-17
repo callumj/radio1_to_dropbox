@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/callumj/media_baron.git
-  revision: e88987e40df4a38d5fc8b9d4e5b5924585a0de72
+  revision: a7e5ca1260fc75b53552aed76385f1476ac2117d
   specs:
     media_baron (0.1)
       activesupport
