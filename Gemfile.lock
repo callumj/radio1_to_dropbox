@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/callumj/media_baron.git
-  revision: 7521fb2fd168fb38a5a33b324e78dc2d83e90256
+  revision: 942a93ed14975e70918f28dada84b32f6da04cf4
   specs:
     media_baron (0.1)
       activesupport
@@ -9,6 +9,7 @@ GIT
       faraday
       faraday_middleware
       nokogiri
+      open4
       tzinfo
 
 GEM
@@ -40,6 +41,7 @@ GEM
     multi_json (1.9.0)
     multipart-post (1.2.0)
     nokogiri (1.5.11)
+    open4 (1.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
